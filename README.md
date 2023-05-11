@@ -66,14 +66,15 @@
 ```
 ![7 배치모드](https://github.com/eodhlwjr97/2023-1-Algorithm/assets/99021614/d953d29e-8422-40d8-8d25-903be16cc806)
 
-## 뽑기
+### º 뽑기   
 ```
 상점에서 판매하는 조경 및 뽑기로만 얻을 수 있는 희귀 조경, 성장의 물약, 새로운 동물 친구 등을 뽑을 수 있다.   
 ```
 ![11  (1) 뽑기_깃허브리드미용량조절](https://github.com/eodhlwjr97/2023-1-Algorithm/assets/99021614/d20308a9-644b-4cba-b350-2610a5a750f6)
 
-## ✨ 주요 기능
 ---
+
+## ✨ 주요 기능
 - 서비스 설명 : 이미지 분류를 통한 먹이주기, 음성 텍스트 변환(STT)을 이용한 대화하기 등의 기능을 통해 내 동물을 키우고, 그 과정에서 받게 되는 골드를 통해 새 동물이나 조경을 얻어 필드를 꾸밀 수 있습니다.
 - 주요 기능 :
     - QuickDraw 데이터셋 을 이용한 낙서 이미지 분류 기능을 통해 동물에게 먹이를 직접 그려서 줄 수 있는 기능
@@ -81,10 +82,7 @@
     - 조경을 상점에서 구매하고, 필드에 배치할 수 있는 기능
     - 미로를 돌아다니며 골드를 모을 수 있는 미로찾기 게임
 
-### 개발 환경
-
----
-
+## 💻 개발 환경
 **Backend**
 - Visual Studio Code
 - pyton 3.10.5
@@ -122,20 +120,18 @@ Back-end : [링크](https://file.notion.so/f/s/60a8a820-ba6a-4297-b903-de240046c
 
 Unity (Front-end) : [링크](https://file.notion.so/f/s/5e7977f0-1fd8-4a64-bb9b-a1e9fcfff048/%EC%9C%A0%EB%8B%88%ED%8B%B0%EB%B9%8C%EB%93%9C%ED%85%8C%EC%8A%A4%ED%8A%B8.pdf?id=16661283-5ba7-48bc-a3d9-79298d1ed6cd&table=block&spaceId=fd3ef439-43cf-4af5-94b3-dfaf012b4bf5&expirationTimestamp=1683882513731&signature=9HE5QlyWlLRXGPKDGU1gjMtb13WnjXQfx_kbgfbKpfY&downloadName=%EC%9C%A0%EB%8B%88%ED%8B%B0%EB%B9%8C%EB%93%9C%ED%85%8C%EC%8A%A4%ED%8A%B8.pdf)
 
-### 아키텍쳐 구성도
+---                                     
+## 🏗️ 아키텍쳐 구성도
 
----
 ![아키텍처](https://github.com/eodhlwjr97/2023-1-Algorithm/assets/99021614/d3777529-7391-46d7-a8e9-c3fdaaa007e8)
 
-### Jenkins를 이용한 CD 구축 및 SSL 인증서 적용
-
 ---
+## Jenkins를 이용한 CD 구축 및 SSL 인증서 적용
 
 백엔드 CICD 배포 및 SSL 인증서 적용 과정은 [여기](https://lab.ssafy.com/s07-webmobile3-sub2/S07P12C102/-/blob/master/CICD.md)에서 설명해두었습니다.
 
-### 특이점
-
 ---
+## 특이점
 
 - Unity
 동물 키우기를 기획하는 도중 아이소매트릭 형태의 디자인 아이디어가 나왔고, 동물에 대해 생동감을 부여해주고 필드를 꾸밀 수 있도록 하기 위해서 3D 화면으로 구현하기로 결정했습니다. three.js, Unity, AndroidStudio 등의 후보를 두고 고민하고 토의를 한 결과 Unity를 사용하는 것으로 결정했습니다.
@@ -155,11 +151,9 @@ AI HUB에서 내려받은 한국어 데이터셋을 이용한 STT(Speech to Text
 - 배포
 Docker, Nginx, Jenkins를 이용하여 무중단 자동 배포를 구축하였습니다. Nginx는 Aws에 서버를 띄워 FE를 서비스했고, Django 서버는 도커의 컨테이너로 넣어 AWS EC2의 Nginx에 리버스 프록시로 연결했습니다.
 
-
-
-### 협업
-
 ---
+## 협업
+
 - Git
 - Jira
 - Notion
@@ -167,12 +161,10 @@ Docker, Nginx, Jenkins를 이용하여 무중단 자동 배포를 구축하였�
 - Webex
 - discode
 
-
-### ✨ Plastic SCM Commit Rule (Unity 협업 툴)
-
 ---
+## ✨ Plastic SCM Commit Rule (Unity 협업 툴)
 
-## 📌 브랜치 생성 관련
+### 📌 브랜치 생성 관련
 
 - 최상단 브랜치 - main
 - main/test → scm 브랜치 테스트 브랜치이므로 신경쓰지 않아도 된다
@@ -180,7 +172,7 @@ Docker, Nginx, Jenkins를 이용하여 무중단 자동 배포를 구축하였�
     - 예시) 로그인의 경우
         - main/login, main/login_certified
 
-## 📌 Commit Rule
+### 📌 Commit Rule
 
 - [본인이름] 기능상세설명
 - 디폴트로 변경되는 값만 커밋할 경우(본인의 변경사항이 없는데 변경사항이 갑자기 생긴경우)
@@ -188,7 +180,7 @@ Docker, Nginx, Jenkins를 이용하여 무중단 자동 배포를 구축하였�
     본인 이름만 써서 커밋하기 (EX. [본인이름])
     
 
-## 📌 병합 (Merge)
+### 📌 병합 (Merge)
 
 - 1)워크스페이스 업데이트 후 !
 - 2) 하위브랜치에서 일단 변경사항을 커밋하기
@@ -196,9 +188,8 @@ Docker, Nginx, Jenkins를 이용하여 무중단 자동 배포를 구축하였�
 - 병합하려는 하위 브랜치를 우클릭하여 **“이 브랜치에서 병합”** 선택
 - 마지막으로, 변경된 내용을 가져왔으므로 상위브랜치에서 재커밋을 해줘야 함
 
-###  ER Diagram
-
 ---
+##  ER Diagram
 
 ![ERD](https://github.com/eodhlwjr97/2023-1-Algorithm/assets/99021614/54e06f63-1283-489e-8ac7-e31db3f570cf)
 
